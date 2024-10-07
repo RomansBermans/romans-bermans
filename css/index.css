@@ -1,0 +1,15 @@
+@import url('base.css');
+
+section {
+  min-height: 100vh;
+  text-align: center;
+  &:nth-child(odd) {
+    background-color: #000;
+    * {
+      color: #fff;
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+}
