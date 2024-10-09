@@ -4,11 +4,11 @@ section {
   min-height: 100vh;
   text-align: center;
   &:nth-child(odd) {
-    background-color: #000;
+    background-color: #000000;
     * {
-      color: #fff;
+      color: #ffffff;
       &:hover {
-        color: #ddd;
+        color: #dddddd;
       }
     }
   }

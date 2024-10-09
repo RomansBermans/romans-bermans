@@ -1,18 +1,20 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 /* Variables */
 :root {
-  --primary-color: #333333;
+  --primary-color: #000000;
   --hero-color: #000000;
+  --accent-color: #333333;
   
-  --primary-font: 'Raleway', sans-serif;
-  --hero-font: 'Raleway', sans-serif;
+  --primary-font: 'Yeseva One', serif;
+  --hero-font: 'Yeseva One', serif;
+
+  --text-element-margin: 2.5rem;
 
   --section-padding: 10rem;
   --container-gap: 6rem;
   --container-grid-template-columns: repeat(12, 1fr);
-
   @media (max-width: 1000px) {
     --section-padding: 6rem;
     --container-gap: 4rem;
@@ -45,14 +47,14 @@ body {
   line-height: 1.6;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6, address {
+/* Text */
+h1, h2, h3, h4, h5, h6, address, nav {
   color: var(--hero-color);
   font-family: var(--hero-font);
   font-weight: 600;
   font-size: 1.8rem;
   font-style: normal;
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--text-element-margin);
 }
 
 h1 { font-size: 5.0rem; @media (max-width: 800px) { font-size: 4.0rem; } }
@@ -63,7 +65,7 @@ h5 { font-size: 2.6rem; @media (max-width: 800px) { font-size: 2.4rem; } }
 h6 { font-size: 2.0rem; @media (max-width: 800px) { font-size: 2.0rem; } }
 
 p {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--text-element-margin);
 }
 
 a {
@@ -71,7 +73,18 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   &:hover {
-    color: var(--hero-color);
+    color: var(--accent-color);
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  &:not(:last-child) {
+    margin-right: var(--text-element-margin);
   }
 }
 
@@ -108,12 +121,7 @@ img {
   max-width: 100%;
 }
 
-ul {
-  list-style-type: none;
-}
-
 [data-background] {
-  background: center/cover no-repeat;
-  background-color: rgba(255, 255, 255, 0.9);
+  background: center/cover no-repeat rgba(255, 255, 255, 0.9);
   background-blend-mode: overlay;
 }
