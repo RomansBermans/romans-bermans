@@ -22,6 +22,12 @@ Language can pull you up or push you down. It can drag you or lead you. It can b
 
 Power is a relation. Power exists when there is more than one. Face exists in relation.
 
-What would happen if next time you took a breath before saying something?
+I am thinking about words. What language do I use with my daughter… sometimes I do not feel good about my language, too excited, too tired, too strong.
+
+I want to see you as you are, but with language I see you through words.
+
+I am worried about my language. I do not want it to put you down… sometimes I am scared, I react, I protect myself. Later I hear my own words and I feel lonely. I do not want to be alone.
+
+What would happen if next time I took a breath before saying something?
 
 Which words will you direct at your loved one when you wake up?
