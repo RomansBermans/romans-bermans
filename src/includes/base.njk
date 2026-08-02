@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="{{ ogType or 'website' }}">
+    <meta property="og:title" content="{{ title or site.name }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% if image %}<meta property="og:image" content="{{ site.url }}{{ page.url }}{{ image }}">{% endif %}
+
+    <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="/feed.xml">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="RB">
+  </head>
+
+  <body>
+    <main>
+{{ content | safe }}
+    </main>
+  </body>
+</html>

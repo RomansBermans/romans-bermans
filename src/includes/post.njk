@@ -1,0 +1,14 @@
+---
+layout: base.njk
+ogType: article
+---
+<section>
+  <div class="container">
+    <div class="column-8">
+      <h1>{{ title }}</h1>
+{{ content | safe }}
+      <p><em>{{ date | readableDate }}</em></p>
+      <p><a class="back-link" href="/writing/">←</a></p>
+    </div>
+  </div>
+</section>
