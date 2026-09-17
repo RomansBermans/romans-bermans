@@ -1,0 +1,14 @@
+---
+layout: base.njk
+ogType: article
+---
+<article class="post{% if blend %} post-blend-images{% endif %}">
+  <div class="container flow">
+    <header class="post-header">
+      <h1>{{ title }}</h1>
+      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    </header>
+{{ content | safe }}
+    <p class="navigation-back"><a href="/writing/">Writing</a></p>
+  </div>
+</article>
