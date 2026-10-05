@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romans.bermans.cc/sitemap.xml
